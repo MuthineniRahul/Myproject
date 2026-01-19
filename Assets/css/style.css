@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+     font-family: "Roboto", sans-serif;
+     margin: 0;
+     padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+      font-family: "Lato", sans-serif;
+}
+
+ul,ol{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar{
+    background-color: rgb(37, 37, 119);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px;
+    
+}
+.topbar-left-content ul,.topbar-right-content ul,.topbar-right-content{
+    display: flex;
+}
+
+.topbar-left-content ul li a,.topbar-right-content ul li a{
+    color: white;
+    padding: 4px;
+    
+}
+.topbar-right-content ul{
+    border-right: 1px solid white;
+}
+.topbar-btn a{
+    background-color: aquamarine;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+
+}
+.logo{
+    position: relative;
+    left: 80px;
+}
+nav ul{
+    display: flex;
+     padding: 10px 80px; 
+    
+}
+nav ul li{
+    padding: 10px;
+    margin:5px;
+}
+
+/* hero section css */
+.hero-section{
+    background-image: url("../images/hero-bg-image\ \(1\).jpg");
+    background-position: center;
+       position: relative;
+    height: 600px;
+    width: 100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.hero-section::before{
+    content: '';
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+.hero-content{
+    position: absolute;
+    text-align: center;
+   
+}
+.hero-content h1{
+    color:white;
+}
+.hero-content p{
+    width:100%;
+    max-width: 500px;
+    color:white
+}
+.hero-btn-one{
+    background-color: cyan;
+   padding: 10px;
+    border-radius: 6px;
+    margin-right:10px;
+
+}
+.hero-btn-two{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.hero-btn-one:hover{
+ background-color: white;
+    color: blue;
+
+}
+.hero-btn-two:hover{
+    background-color: white;
+    color: blue;
+
+}
+
+/* about section */
+.about-us{
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+    padding:40px 80px;
+   gap: 40px 40px;
+}
+.about-content a{
+    background-color:rgb(38, 208, 230) ;
+    padding: 10px;
+    border-radius:4px ;
+    color: white;
+}
+.about-content a:hover{
+    background-color: rgb(58, 80, 147);
+
+}
+
+.Our-Courses{
+    background-color: rgb(202, 202, 202);
+    padding: 40px 80px;
+}
+
+.cource-details h4{
+    text-align: center;
+}
+.cource-details .para{
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin:10px auto;
+
+}
+.courses-cards{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: 10px;
+    gap: 40px 40px;
+}
+.course-card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 1px rgb(109, 107, 107);
+}
